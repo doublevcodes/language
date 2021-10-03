@@ -1,7 +1,8 @@
 
 #[derive(Debug, PartialEq, Copy, Clone)]
 pub struct Position {
-    pub start: u32,
-    pub end: u32,
-    pub lineno: u32
+    pub start: usize,
+    pub end: usize,
+    pub line_number: usize,
+    pub column_number: usize
 }
